@@ -1,0 +1,25 @@
+/* TopNav.css */
+.top-nav {
+    width: 100%;
+    background-color: #1abc9c;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+
+.top-nav h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.top-nav .me-2 {
+    font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+    .top-nav {
+        display: flex; /* Show on small screens */
+    }
+}

@@ -1,0 +1,27 @@
+/* BottomNav.css */
+
+.bottom-nav {
+    display: none;
+    justify-content: space-around;
+    background-color: #1abc9c;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-icon.active {
+    color: #F1C40F;
+}
+
+@media (max-width: 992px) {
+    .bottom-nav {
+        display: flex; /* Show on small screens */
+    }
+}
