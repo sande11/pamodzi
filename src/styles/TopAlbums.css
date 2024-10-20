@@ -1,0 +1,63 @@
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title h4{
+    margin-left: -20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.title p{
+    color: #F1C40F;
+    margin-right: -15px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.title p:hover {
+    text-decoration: underline;
+}
+
+.albums{
+    display: flex;
+    gap: 20px;
+}
+.album{
+    margin: 12px;
+}
+@media (max-width: 992px) {
+    .top{
+      margin-top: 250px;
+    }
+    .album img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .albums{
+        display: flex;
+        gap: 20px;
+    }
+    .album p {
+        font-size: 1rem;
+        color: #333;
+        margin: 5px 0;
+      }
+      
+      .album p:nth-child(2) {
+        font-weight: bold;
+      }
+
+    .album{
+        width: 50%;
+        text-align: center;
+        flex-direction: column;
+        background-color: #ECF0F1;
+        margin-left: -20px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+}

@@ -9,13 +9,13 @@ function Banner() {
         {
             title: "Featured Artist: Lunatic",
             subtitle: "Stream the Latest Hits Now!",
-            details: "10,900,098 Total Downloads | New Album: [Album Name]",
+            details: "10,900,098 Downloads | [Album Name]",
             imgSrc: Artistl
         },
         {
             title: "Get Premium Access",
             subtitle: "Unlimited Music, Ad-Free Streaming",
-            details: "Sign Up Now and Enjoy 30 Days Free!",
+            details: "Sign Up Now!",
             imgSrc: Artistl
         },
         {
@@ -33,7 +33,7 @@ function Banner() {
         {
             title: "Artist Spotlight: Lunatic",
             subtitle: "Listen to the Hits That Made Them Famous",
-            details: "Exclusive Interviews and More",
+            details: "Exclusive Interviews",
             imgSrc: Artistl
         }
     ];
@@ -81,13 +81,13 @@ function Banner() {
                 </div>
 
                 <div className="artist row">
-                    <div className="col-12 col-md-8">
-                        <div className="name" >
-                            <h2 style={{color: '#ffff'}}>{currentBanner.title}</h2>
+                    <div className="details col-12 col-md-8">
+                        <div className="name fs-6 fs-md-4 fs-lg-2">
+                            <h2 className="fs-6 fs-md-4 fs-lg-2" style={{color: '#ffff'}}>{currentBanner.title}</h2>
                         </div>
-                        <p><i><FaHeadphones /></i> {currentBanner.details}</p>
+                        <p style={{color: '#ffff'}} className="fs-6 fs-md-4 fs-lg-2"><i className="fs-6 fs-md-4 fs-lg-2" style={{color: '#F1C40F', marginTop:'-10px'}}><FaHeadphones /></i> {currentBanner.details}</p>
                     </div>
-                    <div className="col-12 col-md-4 d-flex justify-content-md-end justify-content-start">
+                    <div className="play col-12 col-md-4 d-flex justify-content-md-end justify-content-end">
                         <a href="#" className="btn btn-warning">Play</a>
                     </div>
                 </div>
