@@ -5,19 +5,6 @@
   overflow: hidden;
   display: flex;
 }
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  z-index: -1;
-}
-
 /* Large screen styles (default) */
 .top-nav, .bottom-nav {
   display: none;
@@ -33,9 +20,27 @@
 
   .sidebar {
     display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
   }
-
+  .side{
+    display: none;
+  }
+  .MenuContainer{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
   .top-nav, .bottom-nav {
     display: block;
   }
+  .App {
+    overflow: visible;
+  }
+  .MainContent {
+    margin-left: 0;
+  }
+  
 }

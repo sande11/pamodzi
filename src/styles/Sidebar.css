@@ -22,17 +22,14 @@
     font-size: 1rem;
     font-weight: bold;
   }
-  
-  .flex-grow-1 {
-    background-color: #121212; /* Main content background */
-    color: white;
-    min-height: 100vh;
-  }
+
   
   /* Menu container styles */
   .MenuContainer ul {
     width: 100%;
     padding: 0;
+    background-color: #1abc9c;
+    /* color: white; */
   }
   
   .MenuContainer ul li {
@@ -87,6 +84,15 @@
 
   @media (max-width: 992px) {
     .sidebar {
-        display: none; /* Hide sidebar on small screens */
+        display: none; 
+        
     }
+    .MenuContainer{
+      display: none;
+    }
+    .logo{
+      display: none;
+    }
+    .main-content {
+      margin-left: 0 !important;}
 }

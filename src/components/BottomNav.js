@@ -7,7 +7,8 @@ import '../styles/BottomNav.css';
 
 const BottomNav = ({ activeLink, handleActiveLink }) => {
     return (
-        <div className="bottom-nav d-flex justify-content-around align-items-center d-lg-none"> {/* Hide on large screens */}
+        <div className="bottom-nav d-flex justify-content-around align-items-center d-lg-none">
+            {/* Ensure icons stay within the width */}
             <FaHome className={`nav-icon ${activeLink === 'home' ? 'active' : ''}`} onClick={() => handleActiveLink('home')} />
             <FaSearch className={`nav-icon ${activeLink === 'search' ? 'active' : ''}`} onClick={() => handleActiveLink('search')} />
             <FaMusic className={`nav-icon ${activeLink === 'songs' ? 'active' : ''}`} onClick={() => handleActiveLink('songs')} />

@@ -1,0 +1,30 @@
+/* MainContent.css */
+.flex-grow-1 {
+    background-color: #121212;
+    color: white;
+    transition: margin-left 0.3s;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .main-content {
+    padding-top: 56px; /* This should be the height of your navbar to avoid content overlapping */
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .collapsed {
+    margin-left: 90px;
+  }
+  
+  .expanded {
+    margin-left: 250px;
+  }
+  
+  /* Media Queries for small screens */
+  @media (max-width: 992px) {
+    .collapsed,
+    .expanded {
+      margin-left: 0;
+      /* margin-top: 40px; */
+    }
+  }
+  

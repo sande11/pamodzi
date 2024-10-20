@@ -1,27 +1,28 @@
 /* BottomNav.css */
-
 .bottom-nav {
-    display: none;
-    justify-content: space-around;
-    background-color: #1abc9c;
+    background-color: #121212;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 10px 0;
-}
-
-.nav-icon {
-    font-size: 24px;
+    z-index: 1000;
+  }
+  
+  .nav-icon {
     color: white;
+    font-size: 24px;
     cursor: pointer;
-}
-
-.nav-icon.active {
-    color: #F1C40F;
-}
-
-@media (max-width: 992px) {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-icon.active {
+    color: #f1c40f;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 992px) {
     .bottom-nav {
-        display: flex; /* Show on small screens */
+      display: none;
     }
-}
+  }
+  
