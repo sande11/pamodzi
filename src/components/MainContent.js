@@ -3,6 +3,7 @@ import React from 'react';
 import '../styles/Maincontent.css';
 import { Banner } from './Banner';
 import TopAlbums from './TopAlbums';
+import TopArtists from './TopArtists';
 
 
 const MainContent = ({ isCollapsed }) => {
@@ -16,7 +17,9 @@ const MainContent = ({ isCollapsed }) => {
         <div class='homecontent container-fluid'>
           <TopAlbums/>
         </div>
-
+        <div class='homecontent container-fluid'>
+          <TopArtists/>
+        </div>
     </div>
   </main>
   );

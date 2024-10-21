@@ -8,7 +8,7 @@ const TopNav = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top custom-navbar">
             <div className="container-fluid">
-                <div className="top-nav d-flex align-items-center justify-content-center py-2 d-lg-none"> 
+                <div className="top-nav d-flex align-items-center justify-content-start py-2 d-lg-none"> 
                     <h2 className="text-light d-flex align-items-center mb-0">
                         <BsSoundwave className="me-2" />
                         Pamodzie

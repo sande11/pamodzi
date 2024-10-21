@@ -2,7 +2,7 @@
 .banner {
     height: 300px;
     position: absolute;
-    width: 100%;
+    margin-top: -70px;
     clear: both;
     overflow: hidden;
 }
@@ -34,6 +34,7 @@
     justify-content: flex-end;
     z-index: 3;
 }
+
 .dropdown{
     color: white;
 }

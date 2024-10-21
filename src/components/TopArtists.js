@@ -1,28 +1,28 @@
-import '../styles/TopAlbums.css'
+import '../styles/TopArtists.css'
 import React, { Component } from 'react'
 import artistImage from '../img/artistl.jpg';
 import { IoPlayCircle } from 'react-icons/io5';
 
-export class TopAlbums extends Component {
+
+export class TopArtists extends Component {
   static propTypes = {}
 
   render() {
     return (
-    <div className='container'>
-      <div className='top'>
+        <div className='container' >
+      <div className='topArtists' >
         <div className='title'>
-            <h4>Top Albums</h4>
+            <h4>Top Artists</h4>
             <p>See all</p>
         </div>
-        <div className='albums'>
-            <div className='album'>
+        <div className='albums' >
+            <div className='album' >
             <img alt="album cover" src={artistImage} />
             <div className='overlay'>
                 <IoPlayCircle className='play-icon' />
               </div>
                 <p>Artist 1</p>
-                <p>Album 1</p>
-                <p>K1,000</p>
+               
             </div>
 
             <div className='album'>
@@ -31,8 +31,8 @@ export class TopAlbums extends Component {
                 <IoPlayCircle className='play-icon' />
               </div>
                 <p>Artist 1</p>
-                <p>Album 1</p>
-                <p>K1,000</p>
+             
+              
             </div>
             <div className='album'>
             <img alt="album cover" src={artistImage} />
@@ -40,8 +40,8 @@ export class TopAlbums extends Component {
                 <IoPlayCircle className='play-icon' />
               </div>
                 <p>Artist 1</p>
-                <p>Album 1</p>
-                <p>K1,000</p>
+               
+              
             </div>
 
             <div className='album'>
@@ -50,7 +50,7 @@ export class TopAlbums extends Component {
                 <IoPlayCircle className='play-icon' />
               </div>
                 <p>Artist 1</p>
-                <p>Album 1</p>
+              
             </div>
         </div>
       </div>
@@ -59,4 +59,4 @@ export class TopAlbums extends Component {
   }
 }
 
-export default TopAlbums
+export default TopArtists
