@@ -51,6 +51,7 @@ export class TopAlbums extends Component {
               </div>
                 <p>Artist 1</p>
                 <p>Album 1</p>
+                <p>K1000</p>
             </div>
         </div>
       </div>

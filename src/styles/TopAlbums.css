@@ -1,36 +1,99 @@
 
 .title{
     display: flex;
+    margin-left: 10px;
+    margin-right: 15px;
     justify-content: space-between;
 }
 .title h4{
-    margin-left: -20px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
 }
 .title p{
     color: #F1C40F;
-    margin-right: -15px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 20px;
 
 }
 .title p:hover {
     text-decoration: underline;
 }
 
-.albums{
+.albums {
+    margin-left: -20px;
     display: flex;
-
-}
-.album{
-    margin: 10px;
-}
+    white-space: nowrap; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    overflow-x: auto;
+  }
+  
+  .album {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .album img {
+    width: 218px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hide scrollbar on mobile */
+  .albums::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .album p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .album p:nth-child(2) {
+    font-weight: bold;
+  }
+  
+  .album .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 8px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .album:hover .overlay {
+    opacity: 1;
+  }
+  
+  .play-icon {
+    color: #F1C40F;
+    font-size: 3rem;
+  }
+  
+  /* Hover effect for image */
+  .album:hover img {
+    transform: scale(1.05);
+  }
 @media (max-width: 992px) {
-    .top{
-      margin-top: 250px;
-    }
+
     .album img{
         width: 120px;
         height: 100px;

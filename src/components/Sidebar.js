@@ -36,7 +36,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, activeLink, handleActiveLink }) =
           {[
             { name: 'home', icon: FaHome, label: 'Home' },
             { name: 'search', icon: FaSearch, label: 'Search' },
-            { name: 'library', icon: MdLibraryMusic, label: 'Your Library' },
+            { name: 'albums', icon: MdLibraryMusic, label: 'Albums' },
             { name: 'songs', icon: FaMusic, label: 'Songs' },
             { name: 'radio', icon: RiRadioLine, label: 'Radio' }
           ].map((item) => (
@@ -57,7 +57,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, activeLink, handleActiveLink }) =
       <div className="MenuContainer">
         <ul className="list-unstyled">
           <p style={{ fontSize: '21px', fontWeight: 'bold', marginLeft: '-8px' }}>
-            Playlists <FaPlus style={{ color: '#F1C40F', marginLeft: '10px' }} />
+            Playlists
           </p>
           {[
             { name: 'favorite', icon: FaHeart, label: 'Favorite' },
